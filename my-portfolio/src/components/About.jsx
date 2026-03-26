@@ -8,12 +8,10 @@ export default function About() {
   ]
 
   return (
-    <section className="reveal bg-white dark:bg-black text-black dark:text-white min-h-screen p-8 pt-2 transition-colors duration-500">
-      
-      <div className="border-t border-black/20 dark:border-white/20 pt-8 mb-20">
-        <h1 className="text-[6rem] font-[gaia] leading-none tracking-tight text-black dark:text-white">
-          About ( me )
-        </h1>
+    <section className="reveal bg-white dark:bg-black text-black dark:text-white min-h-screen p-8 pt-2 transition-colors duration-500 overflow-hidden">      <div className="border-t border-black/20 dark:border-white/20 pt-8 mb-20">
+       <h1 className="text-[clamp(2.2rem,10vw,6rem)] font-[gaia] leading-none tracking-tight text-black dark:text-white">
+        About ( me )
+      </h1>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-y-20 gap-x-12 font-[arial]">
@@ -86,12 +84,7 @@ export default function About() {
         </div>
 
       </div>
-
-      <div className="mt-40 flex justify-between text-xs font-mono opacity-30 uppercase tracking-widest border-t border-black/10 dark:border-white/10 pt-6">
-        <span>MUBASHIRA SUROOR / 2026</span>
-        <span className="hidden md:block">Status: Open for Internships</span>
-      </div>
-
+     
     </section>
   )
 }
