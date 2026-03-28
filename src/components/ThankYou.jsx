@@ -14,16 +14,16 @@ export default function ThankYou() {
   }, [])
 
   return (
-    <section className="reveal font-[gaia] bg-white dark:bg-black text-black text-center dark:text-white px-6 pt-20 pb-12 md:px-8 md:pt-32 transition-colors duration-500 overflow-hidden">
+    <section className="reveal font-[gaia] bg-white dark:bg-black text-black text-center dark:text-white px-6 pt-6 pb-12 md:px-8 md:pt-32 transition-colors duration-500 overflow-hidden">
 
       <div className="border-t border-black/20 dark:border-white/20 pt-12">
         <span className="text-xs uppercase opacity-50 tracking-[0.3em]">Next Step</span>
 
         <div className="mt-8 mb-10 md:mb-20">
-          <h2 className="text-[clamp(2.5rem,10vw,8rem)] font-[gaia] leading-none tracking-tighter uppercase">
+          <h2 className="text-[clamp(3rem,10vw,8rem)] font-[gaia] leading-none tracking-tighter uppercase">
             Thank You.
           </h2>
-          <p className="text-[clamp(0.85rem,2vw,1.2rem)] font-sans mt-4 leading-relaxed text-center opacity-80">
+          <p className="text-[clamp(1rem,2vw,1.4rem)] font-sans mt-4 leading-relaxed text-center opacity-80">
             I am currently looking for internships and junior roles.<br />
             If you like my work, let's build something meaningful together.
           </p>

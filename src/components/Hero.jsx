@@ -31,7 +31,7 @@ export default function Hero() {
         <div
           className="text-left font-sans opacity-80"
           style={{
-            fontSize: "clamp(0.95rem, 2vw, 1.4rem)",
+            fontSize: "clamp(1.5rem, 2vw, 1.4rem)",
             maxWidth: "480px",
             opacity: ready ? 0.8 : 0,
             transform: ready ? "translateY(0px)" : "translateY(24px)",
