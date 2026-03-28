@@ -27,32 +27,31 @@ export default function Hero() {
         </h1>
       </div>
 
-      <div className="flex-1 flex items-center px-6 md:px-8">
+      <div className="flex-1 flex items-center px-6">
         <div
-          className="text-left font-sans opacity-80 max-w-sm md:max-w-md"
+          className="text-left font-sans opacity-80"
           style={{
-            fontSize: "clamp(1.5rem, 2.5vw, 1.4rem)",
+            fontSize: "clamp(0.95rem, 2vw, 1.4rem)",
+            maxWidth: "480px",
             opacity: ready ? 0.8 : 0,
             transform: ready ? "translateY(0px)" : "translateY(24px)",
             transition: "opacity 1s cubic-bezier(0.16,1,0.3,1) 0.5s, transform 1s cubic-bezier(0.16,1,0.3,1) 0.5s",
           }}
         >
-          I create web designs and
-          web development work I
-          search for new concepts which 
-          I test through my work in each project. 
-          <br /> <br />I develop my skills through every project
-          I complete 
-          while constructing products which 
-          reach the market.
+          I create web designs and web development work.
+          I search for new concepts which I test through
+          my work in each project.
+          <br /><br />
+          I develop my skills through every project I complete
+          while constructing products which reach the market.
         </div>
       </div>
 
-      <div className="w-full flex items-end justify-between p-6 md:p-8">
+      <div className="w-full flex items-end justify-between px-6 pb-6">
         <div
           className="font-[gaia]"
           style={{
-            fontSize: "clamp(0.85rem, 2.5vw, 1.5rem)",
+            fontSize: "clamp(0.85rem, 2vw, 1.5rem)",
             opacity: ready ? 1 : 0,
             transform: ready ? "translateY(0px)" : "translateY(24px)",
             transition: "opacity 1s cubic-bezier(0.16,1,0.3,1) 0.2s, transform 1s cubic-bezier(0.16,1,0.3,1) 0.2s",
@@ -64,7 +63,7 @@ export default function Hero() {
         <div
           className="font-[gaia]"
           style={{
-            fontSize: "clamp(0.85rem, 2.5vw, 1.5rem)",
+            fontSize: "clamp(0.85rem, 2vw, 1.5rem)",
             opacity: ready ? 1 : 0,
             transform: ready ? "translateY(0px)" : "translateY(24px)",
             transition: "opacity 1s cubic-bezier(0.16,1,0.3,1) 0.35s, transform 1s cubic-bezier(0.16,1,0.3,1) 0.35s",
