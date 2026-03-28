@@ -14,7 +14,7 @@ export default function ThankYou() {
   }, [])
 
   return (
-    <section className="reveal font-[gaia] bg-white dark:bg-black text-black text-center dark:text-white px-6 pt-6 pb-12 md:px-8 md:pt-32 transition-colors duration-500 overflow-hidden">
+    <section className="reveal font-[gaia] bg-white dark:bg-black text-black text-center dark:text-white px-6 pt-6  lg:px-4 lg:py-4 pb-12 md:px-8 md:pt-32 transition-colors duration-500 overflow-hidden">
 
       <div className="border-t border-black/20 dark:border-white/20 pt-12">
         <span className="text-xs uppercase opacity-50 tracking-[0.3em]">Next Step</span>

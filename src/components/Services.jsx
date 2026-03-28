@@ -1,6 +1,6 @@
 export default function Services() {
   return (
-    <section className="bg-white dark:bg-black text-left text-black dark:text-white min-h-screen px-6 py-6 md:px-8 md:py-20 transition-colors duration-500 overflow-hidden">
+    <section className="bg-white dark:bg-black text-left text-black dark:text-white min-h-screen px-[-4] py-6 md:px-8 md:py-20 transition-colors duration-500 overflow-hidden">
 
       <div className="border-t border-black/20 dark:border-white/20 pt-8 mb-10 md:mb-20">
         <h1 className="text-[clamp(3rem,10vw,6rem)] font-[gaia] leading-none tracking-tighter">

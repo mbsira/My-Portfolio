@@ -18,7 +18,7 @@ export default function Projects() {
   ]
 
   return (
-    <section className="bg-white dark:bg-black text-left text-black dark:text-white min-h-screen px-6 py-6 md:px-8 md:py-32 transition-colors duration-500 overflow-hidden">
+    <section className="bg-white dark:bg-black text-left text-black dark:text-white min-h-screen px-6 py-6 md:px-4 lg:px-4 lg:py-4 md:py-2 transition-colors duration-500 overflow-hidden">
 
       <div className="border-t border-black/20 dark:border-white/20 pt-8 mb-16 md:mb-32">
         <h1 className="text-[clamp(3rem,10vw,6rem)] font-[gaia] leading-none tracking-tighter">

@@ -2,7 +2,7 @@ export default function ThemeToggle({ dark, setDark }) {
   return (
     <button
       onClick={() => setDark(!dark)}
-      className="z-[100] fixed bottom-6 right-6 p-3 rounded-full bg-gray-100 dark:bg-white/10 transition-transform active:scale-95"
+      className="z-[100] fixed bottom-[55%] right-6 p-3 rounded-full bg-gray-100 dark:bg-white/10 transition-transform active:scale-95"
     >
       {dark ? (
         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
