@@ -3,7 +3,7 @@ export default function Services() {
     <section className="bg-white dark:bg-black text-left text-black dark:text-white min-h-screen px-6 py-6 md:px-4 lg:px-4 lg:py-4 md:py-2 transition-colors duration-500 overflow-hidden">
 
       <div className="border-t border-black/20 dark:border-white/20 pt-8 mb-10 md:mb-20">
-        <h1 className="text-[clamp(3rem,10vw,6rem)] font-[gaia] leading-none tracking-tighter">
+        <h1 className="text-[clamp(2rem,10vw,6rem)] font-[gaia] leading-none tracking-tighter">
           Services
         </h1>
       </div>
@@ -16,7 +16,7 @@ export default function Services() {
             <span className="text-sm font-mono uppercase">01</span>
           </div>
           <h2 className="text-[clamp(2rem,5vw,3rem)] font-[gaia] uppercase tracking-wide">Web Design</h2>
-          <p className="text-[clamp(1rem,1.5vw,1.3rem)]">
+          <p className="text-base md:text-lg">
             Building aesthetic and functional interfaces.
             I design according to three principles which
             include clean design methods, modern font style,
@@ -30,7 +30,7 @@ export default function Services() {
             <span className="text-sm font-mono uppercase">02</span>
           </div>
           <h2 className="text-[clamp(2rem,5vw,3rem)] font-[gaia] uppercase tracking-wide">QA & Debugging</h2>
-          <p className="text-[clamp(1rem,1.5vw,1.3rem)]">
+          <p className="text-base md:text-lg">
             Checking for bugs, broken links, and
             responsiveness issues. Ensuring the web
             works accordance with its planned functionality.
@@ -43,7 +43,7 @@ export default function Services() {
             <span className="text-sm font-mono uppercase">03</span>
           </div>
           <h2 className="text-[clamp(2rem,5vw,3rem)] font-[gaia] uppercase tracking-wide">Exploration</h2>
-          <p className="text-[clamp(1rem,1.5vw,1.3rem)]">
+          <p className="text-base md:text-lg">
             Continuously developing my skills through
             experimentation with new ideas. Open to
             any new concepts currently.

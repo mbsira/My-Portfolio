@@ -39,7 +39,7 @@ export default function Projects() {
                 {project.title}
               </a>
             </h3>
-            <p className="text-[clamp(1rem,1.5vw,1.3rem)] leading-relaxed font-sans">
+            <p className="text-base md:text-lg leading-relaxed font-sans">
               {project.description}
             </p>
           </div>

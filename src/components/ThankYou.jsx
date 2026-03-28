@@ -23,7 +23,7 @@ export default function ThankYou() {
           <h2 className="text-[clamp(3rem,10vw,8rem)] font-[gaia] leading-none tracking-tighter uppercase">
             Thank You.
           </h2>
-          <p className="text-[clamp(1rem,2vw,1.4rem)] font-sans mt-4 leading-relaxed text-center">
+          <p className="text-base md:text-lg font-sans mt-4 leading-relaxed text-center">
             I am currently looking for internships and junior roles.<br />
             If you like my work, let's build something meaningful together.
           </p>
