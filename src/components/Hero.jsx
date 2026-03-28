@@ -17,11 +17,11 @@ export default function Hero() {
           ref={titleRef}
           className="font-[gaia] py-1 text-black dark:text-white leading-none tracking-wider transition-colors duration-500 w-full"
           style={{
-          fontSize: "21.4vw",
-          opacity: ready ? 1 : 0,
-          transform: ready ? "translateY(0px)" : "translateY(40px)",
-          transition: "opacity 1.2s cubic-bezier(0.16,1,0.3,1), transform 1.2s cubic-bezier(0.16,1,0.3,1)",
-        }}
+            fontSize: "21.4vw",
+            opacity: ready ? 1 : 0,
+            transform: ready ? "translateY(0px)" : "translateY(40px)",
+            transition: "opacity 1.2s cubic-bezier(0.16,1,0.3,1), transform 1.2s cubic-bezier(0.16,1,0.3,1)",
+          }}
         >
           Portfolio
         </h1>
@@ -29,28 +29,30 @@ export default function Hero() {
 
       <div className="flex-1 flex items-center px-6 md:px-8">
         <div
-          className="text-left font-sans text-[clamp(1.3rem,1.5vw,2rem)] opacity-80 max-w-sm md:max-w-md"
+          className="text-left font-sans opacity-80 max-w-sm md:max-w-md"
           style={{
+            fontSize: "clamp(1.5rem, 2.5vw, 1.4rem)",
             opacity: ready ? 0.8 : 0,
             transform: ready ? "translateY(0px)" : "translateY(24px)",
             transition: "opacity 1s cubic-bezier(0.16,1,0.3,1) 0.5s, transform 1s cubic-bezier(0.16,1,0.3,1) 0.5s",
           }}
         >
-          I create web designs and <br />
-          web development work I <br />
-          search for new concepts which <br />
-          I test through my work in each <br />
-          project.I develop my skills 
-          through every project I complete while constructing
-           products which <br />reach the market.
-  
+          I create web designs and
+          web development work I
+          search for new concepts which 
+          I test through my work in each project. 
+          <br /> <br />I develop my skills through every project
+          I complete 
+          while constructing products which 
+          reach the market.
         </div>
       </div>
 
       <div className="w-full flex items-end justify-between p-6 md:p-8">
         <div
-          className="font-[gaia] text-[clamp(0.85rem,2vw,1.5rem)]"
+          className="font-[gaia]"
           style={{
+            fontSize: "clamp(0.85rem, 2.5vw, 1.5rem)",
             opacity: ready ? 1 : 0,
             transform: ready ? "translateY(0px)" : "translateY(24px)",
             transition: "opacity 1s cubic-bezier(0.16,1,0.3,1) 0.2s, transform 1s cubic-bezier(0.16,1,0.3,1) 0.2s",
@@ -60,8 +62,9 @@ export default function Hero() {
         </div>
 
         <div
-          className="font-[gaia] text-[clamp(0.85rem,2vw,1.5rem)]"
+          className="font-[gaia]"
           style={{
+            fontSize: "clamp(0.85rem, 2.5vw, 1.5rem)",
             opacity: ready ? 1 : 0,
             transform: ready ? "translateY(0px)" : "translateY(24px)",
             transition: "opacity 1s cubic-bezier(0.16,1,0.3,1) 0.35s, transform 1s cubic-bezier(0.16,1,0.3,1) 0.35s",
