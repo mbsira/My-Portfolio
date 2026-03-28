@@ -29,7 +29,7 @@ export default function Hero() {
 
       <div className="flex-1 flex items-center px-6">
         <div
-          className="text-left font-sans opacity-80"
+          className="text-left font-sans"
           style={{
             fontSize: "clamp(1.5rem, 2vw, 1.4rem)",
             maxWidth: "480px",

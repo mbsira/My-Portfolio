@@ -26,7 +26,7 @@ export default function About() {
             </p>
           </div>
           <div>
-            <h3 className="text-xs font-mono uppercase opacity-50 mb-4 tracking-widest">Education</h3>
+            <h3 className="text-xs font-mono uppercase mb-4 tracking-widest">Education</h3>
             <div className="space-y-2">
               <p className="text-sm font-bold uppercase tracking-wide">B.S. Computer Science</p>
               <p className="text-xs opacity-60 font-mono">Status: Level 02 / In Progress</p>
