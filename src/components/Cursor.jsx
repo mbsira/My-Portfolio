@@ -6,32 +6,29 @@ export default function Cursor() {
 
   useEffect(() => {
     const move = (e) => {
-      dot.current.style.left = e.clientX - 6 + "px"
-      dot.current.style.top = e.clientY - 6 + "px"
-      ring.current.style.left = e.clientX - 18 + "px"
-      ring.current.style.top = e.clientY - 18 + "px"
+      if (!dot.current || !ring.current) return
+      dot.current.style.left = e.clientX - 5 + "px"
+      dot.current.style.top = e.clientY - 5 + "px"
+      ring.current.style.left = e.clientX - 16 + "px"
+      ring.current.style.top = e.clientY - 16 + "px"
     }
 
-    const grow = () => ring.current.style.transform = "scale(1.8)"
-    const shrink = () => ring.current.style.transform = "scale(1)"
-
-    const els = document.querySelectorAll("a, button")
+    const grow = () => {
+      if (ring.current) ring.current.style.transform = "scale(1.8)"
+    }
+    const shrink = () => {
+      if (ring.current) ring.current.style.transform = "scale(1)"
+    }
 
     window.addEventListener("mousemove", move)
-    els.forEach(el => {
+    document.querySelectorAll("a, button").forEach(el => {
       el.addEventListener("mouseenter", grow)
       el.addEventListener("mouseleave", shrink)
     })
 
-    return () => {
-      window.removeEventListener("mousemove", move)
-      els.forEach(el => {
-        el.removeEventListener("mouseenter", grow)
-        el.removeEventListener("mouseleave", shrink)
-      })
-    }
+    return () => window.removeEventListener("mousemove", move)
   }, [])
-  
+
   return (
     <>
       <div ref={dot} className="cursor" />

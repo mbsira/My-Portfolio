@@ -16,28 +16,26 @@ export default function Hero() {
   })
 
   return (
-    <section className="bg-white dark:bg-black text-black dark:text-white min-h-screen max-w-[1600px] mx-auto px-8 md:px-16 flex flex-col relative transition-colors duration-700 overflow-hidden">
+    <section className="bg-white  dark:bg-black text-black dark:text-white min-h-screen flex flex-col relative transition-colors duration-700 overflow-hidden">
 
-      <div className="w-full p-0">
+      <div className="w-full overflow-hidden">
         <h1
           ref={titleRef}
-          className="font-[gaia] py-1 text-black dark:text-white leading-none tracking-wider w-full"
-          style={{
-            fontSize: "21.4vw",
-            ...anim(0),
-          }}
+          className="font-[gaia] text-black dark:text-white leading-none tracking-wider w-full"
+          style={{ fontSize: "clamp(3.5rem, 21.4vw, 22rem)", ...anim(0) }}
         >
           Portfolio
         </h1>
       </div>
 
-      <div className="flex-1 flex items-center px-8">
+      <div className="flex-1 flex px-6 items-center pr-6 md:pr-12 lg:pr-20">
         <div
-          className="text-left font-sans leading-relaxed"
+          className="text-left font-sans"
           style={{
-            fontSize: "clamp(1.3rem, 1.8vw, 1.4rem)",
-            maxWidth: "520px",
+            fontSize: "clamp(1.3rem, 1.8vw, 1.25rem)",
+            maxWidth: "560px",
             lineHeight: "1.8",
+            fontWeight: "400",
             ...anim(0.5),
           }}
         >
@@ -50,23 +48,11 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="w-full flex items-end justify-between px-4 pb-8">
-        <div
-          className="font-[gaia]"
-          style={{
-            fontSize: "clamp(1rem, 2.5vw, 2rem)",
-            ...anim(0.2),
-          }}
-        >
+      <div className="w-full px-6 flex items-end justify-between pr-6 md:pr-12 lg:pr-20 pb-8">
+        <div className="font-[gaia]" style={{ fontSize: "clamp(1rem, 2vw, 1.8rem)", ...anim(0.2) }}>
           Mubashira Suroor
         </div>
-        <div
-          className="font-[gaia]"
-          style={{
-            fontSize: "clamp(1rem, 2.5vw, 2rem)",
-            ...anim(0.35),
-          }}
-        >
+        <div className="font-[gaia]" style={{ fontSize: "clamp(1rem, 2vw, 1.8rem)", ...anim(0.35) }}>
           Designer and Developer
         </div>
       </div>

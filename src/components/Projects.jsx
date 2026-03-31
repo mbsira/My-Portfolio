@@ -2,7 +2,7 @@ export default function Projects() {
   const projects = [
     {
       title: "Cafe Website",
-      description: "A premium café website design inspired by high-end restaurant brands.",
+      description: "A premium café website redesign inspired by high-end restaurant brands. Video hero, editorial typography, smooth hover effects, and a fully functional cart.",
       link: "https://cafe-website-snowy-eta.vercel.app"
     },
     {
@@ -12,40 +12,53 @@ export default function Projects() {
     },
     {
       title: "Fashion Store",
-      description: "Luxury modest fashion e-commerce built with React & Tailwind CSS. Features editorial design, cart system and full checkout flow.",
+      description: "Luxury modest fashion e-commerce built with React & Tailwind CSS. Editorial design, cart system and full checkout flow.",
       link: "https://elara-vela-modest.vercel.app"
     }
   ]
 
   return (
-    <section className="bg-white dark:bg-black text-left text-black dark:text-white min-h-screen max-w-[1600px] mx-auto px-8 md:px-16 transition-colors duration-500 overflow-hidden">
+    <section className="bg-white px-6 dark:bg-black text-black dark:text-white min-h-screen transition-colors duration-500">
+      <div className="pr-6 md:pr-12 lg:pr-20 py-16 md:py-24">
 
-      <div className="border-t border-black/20 dark:border-white/20 pt-8 mb-16 md:mb-32">
-        <h1 className="text-[clamp(3rem,10vw,6rem)] font-[gaia] leading-none tracking-tighter">
-          Projects
-        </h1>
+        <div className="border-t border-black/20 dark:border-white/20 pt-8 mb-12 md:mb-24">
+          <h1 className="font-[gaia] leading-none tracking-tighter" style={{ fontSize: "clamp(3rem,10vw,7rem)" }}>
+            Projects
+          </h1>
+        </div>
+
+        <div className="flex flex-col">
+          {projects.map((project, index) => (
+            <a
+              key={index}
+              href={project.link}
+              target="_blank"
+              rel="noreferrer"
+              className="reveal group border-t border-black/10 dark:border-white/10 py-8 md:py-10 flex flex-col md:flex-row md:items-center md:justify-between gap-4 transition-all duration-300"
+            >
+              <div className="flex-1">
+                <h3
+                  className="font-[gaia] uppercase tracking-wide group-hover:opacity-60 transition-opacity duration-300"
+                  style={{ fontSize: "clamp(1.8rem,5vw,4rem)" }}
+                >
+                  {project.title}
+                </h3>
+                <p
+                  className="mt-2 text-black/60 dark:text-white/60"
+                  style={{ fontSize: "clamp(0.85rem,1.5vw,1rem)", lineHeight: "1.7", maxWidth: "600px" }}
+                >
+                  {project.description}
+                </p>
+              </div>
+              <span className="font-mono text-xs uppercase tracking-widest opacity-40 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-300">
+                View →
+              </span>
+            </a>
+          ))}
+          <div className="border-t border-black/10 dark:border-white/10" />
+        </div>
+
       </div>
-
-      <div className="grid grid-cols-1 gap-y-12">
-        {projects.map((project, index) => (
-          <div key={index} className="reveal flex flex-col space-y-2 border-t border-black/10 dark:border-white/10 pt-6">
-            <h3 className="text-[clamp(2rem,5vw,3.75rem)] font-[gaia] uppercase tracking-wide text-black dark:text-white transition-colors duration-300">
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noreferrer"
-                style={{ color: "inherit", textDecoration: "none" }}
-              >
-                {project.title}
-              </a>
-            </h3>
-            <p className="text-base md:text-lg leading-relaxed font-sans">
-              {project.description}
-            </p>
-          </div>
-        ))}
-      </div>
-
     </section>
   )
 }
