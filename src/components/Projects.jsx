@@ -18,7 +18,7 @@ export default function Projects() {
   ]
 
   return (
-    <section className="bg-white px-6 dark:bg-black text-black dark:text-white min-h-screen transition-colors duration-500">
+    <section className="bg-white px-6 dark:bg-black text-black dark:text-white min-h-[100vh] md:min-h-screen transition-colors duration-500">
       <div className="pr-6 md:pr-12 lg:pr-20 py-16 md:py-24">
 
         <div className="border-t border-black/20 dark:border-white/20 pt-8 mb-12 md:mb-24">

@@ -7,32 +7,50 @@ export default function Cursor() {
   useEffect(() => {
     const move = (e) => {
       if (!dot.current || !ring.current) return
-      dot.current.style.left = e.clientX - 5 + "px"
-      dot.current.style.top = e.clientY - 5 + "px"
-      ring.current.style.left = e.clientX - 16 + "px"
-      ring.current.style.top = e.clientY - 16 + "px"
+      
+      const x = e.clientX
+      const y = e.clientY
+      
+      dot.current.style.transform = `translate3d(${x - 5}px, ${y - 5}px, 0)`
+      ring.current.style.transform = `translate3d(${x - 16}px, ${y - 16}px, 0)`
     }
 
     const grow = () => {
-      if (ring.current) ring.current.style.transform = "scale(1.8)"
+      if (ring.current) ring.current.classList.add('growing')
     }
     const shrink = () => {
-      if (ring.current) ring.current.style.transform = "scale(1)"
+      if (ring.current) ring.current.classList.remove('growing')
     }
 
     window.addEventListener("mousemove", move)
-    document.querySelectorAll("a, button").forEach(el => {
+    
+    const links = document.querySelectorAll("a, button, .group")
+    links.forEach(el => {
       el.addEventListener("mouseenter", grow)
       el.addEventListener("mouseleave", shrink)
     })
 
-    return () => window.removeEventListener("mousemove", move)
+    return () => {
+      window.removeEventListener("mousemove", move)
+      links.forEach(el => {
+        el.removeEventListener("mouseenter", grow)
+        el.removeEventListener("mouseleave", shrink)
+      })
+    }
   }, [])
 
   return (
     <>
-      <div ref={dot} className="cursor" />
-      <div ref={ring} className="cursor-follower" />
+      <div 
+        ref={dot} 
+        className="cursor" 
+        style={{ position: 'fixed', top: 0, left: 0, willChange: 'transform' }} 
+      />
+      <div 
+        ref={ring} 
+        className="cursor-follower" 
+        style={{ position: 'fixed', top: 0, left: 0, willChange: 'transform' }} 
+      />
     </>
   )
 }

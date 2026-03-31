@@ -16,7 +16,7 @@ export default function Hero() {
   })
 
   return (
-    <section className="bg-white  dark:bg-black text-black dark:text-white min-h-screen flex flex-col relative transition-colors duration-700 overflow-hidden">
+    <section className="bg-white  dark:bg-black text-black dark:text-white min-h-[100vh] flex flex-col relative transition-colors duration-700 overflow-hidden">
 
       <div className="w-full overflow-hidden">
         <h1
@@ -32,11 +32,11 @@ export default function Hero() {
         <div
           className="text-left font-sans"
           style={{
-            fontSize: "clamp(1.3rem, 1.8vw, 1.25rem)",
+            fontSize: "clamp(4.5rem, 25vw, 22rem)",
             maxWidth: "560px",
             lineHeight: "1.8",
             fontWeight: "400",
-            ...anim(0.5),
+            ...anim(0),
           }}
         >
           I create web designs and web development work.
