@@ -27,26 +27,31 @@ export default function Hero() {
           Portfolio
         </h1>
       </div>
-
-      <div className="flex-1 flex px-6 items-center pr-6 md:pr-12 lg:pr-20">
-        <div
-          className="text-left font-sans"
-          style={{
-            fontSize: "clamp(4.5rem, 25vw, 22rem)",
-            maxWidth: "560px",
-            lineHeight: "1.8",
-            fontWeight: "400",
-            ...anim(0),
-          }}
-        >
-          I create web designs and web development work.
-          I search for new concepts which I test through
-          my work in each project.
-          <br /><br />
-          I develop my skills through every project I complete
-          while constructing products which reach the market.
-        </div>
-      </div>
+<div className="flex-1 flex px-6 items-center pr-6 md:pr-12 lg:pr-20">
+  <div
+    className="text-left font-sans"
+    style={{
+      fontSize: "clamp(1.1rem, 4vw, 1.3rem)",
+      maxWidth: "min(560px, 100%)", 
+      lineHeight: "1.7",
+      textTransform: "uppercase",
+      fontWeight: "400",
+      letterSpacing: "0.02em", 
+      marginBottom: "2rem",     
+      ...anim(0),
+    }}
+  >
+    I create web designs and web development <br className="hidden md:block" />
+    work. I search for new concepts which I <br className="hidden md:block" />
+    test through my work in each project.
+    
+    <div className="h-6 md:h-10" /> 
+    
+    I develop my skills through every project <br className="hidden md:block" />
+    I complete while constructing products <br className="hidden md:block" />
+    which reach the market.
+  </div>
+</div>
 
       <div className="w-full px-6 flex items-end justify-between pr-6 md:pr-12 lg:pr-20 pb-8">
         <div className="font-[gaia]" style={{ fontSize: "clamp(1rem, 2vw, 1.8rem)", ...anim(0.2) }}>
