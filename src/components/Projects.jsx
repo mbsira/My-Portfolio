@@ -1,5 +1,10 @@
 export default function Projects() {
   const projects = [
+     {
+      title: "Korean Shop",
+      description: "Korean-inspired Y2K fashion store. Baggy, low-rise, bootcut fits with a preloader animation, theme switcher, video hover effects, and a fully functional cart.",
+      link: "https://lewkin-shop.vercel.app"
+    },
     {
       title: "Cafe Website",
       description: "A premium café website redesign inspired by high-end restaurant brands. Video hero, editorial typography, smooth hover effects, and a fully functional cart.",
