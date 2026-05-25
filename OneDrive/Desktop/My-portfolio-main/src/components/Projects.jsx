@@ -1,26 +1,26 @@
 export default function Projects() {
- const projects = [
-  {
-    title: "Roastery Coffee",
-    description: "A web app of Roastery cafe with all the features and modern design typography",
-    link: "https://roastery-coffee-clone.vercel.app"
-  },
-   {
+  const projects = [
+    {
+      title: "Korean Shop",
+      description: "Korean-inspired Y2K fashion store. Baggy, low-rise, bootcut fits with a preloader animation, theme switcher, video hover effects, and a fully functional cart.",
+      link: "https://lewkin-shop.vercel.app"
+    },
+    {
+      title: "Cafe Website",
+      description: "A premium café website redesign inspired by high-end restaurant brands. Video hero, editorial typography, smooth hover effects, and a fully functional cart.",
+      link: "https://cafe-website-snowy-eta.vercel.app"
+    },
+    {
       title: "Skincare Website",
       description: "A luxury skincare e-commerce landing page with a working cart, video hero, and editorial typography. Built with HTML, CSS, and Vanilla JS.",
       link: "https://skincare-website-three.vercel.app"
     },
-   {
-    title: "Fashion Store",
-    description: "Luxury modest fashion e-commerce built with React & Tailwind CSS. Editorial design, cart system and full checkout flow.",
-    link: "https://elara-vela-modest.vercel.app"
-  },
-   {
-      title: "Cafe Website",
-      description: "A premium café website redesign inspired by high-end restaurant brands. Video hero, editorial typography, smooth hover effects, and a fully functional cart.",
-      link: "https://cafe-website-snowy-eta.vercel.app"
+    {
+      title: "Fashion Store",
+      description: "Luxury modest fashion e-commerce built with React & Tailwind CSS. Editorial design, cart system and full checkout flow.",
+      link: "https://elara-vela-modest.vercel.app"
     }
-]
+  ]
 
   return (
     <section className="bg-white px-6 dark:bg-black text-black dark:text-white min-h-[100vh] md:min-h-screen transition-colors duration-500">

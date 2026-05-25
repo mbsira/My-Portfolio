@@ -1,6 +1,15 @@
 export default function About() {
-  const hardSkills = ["HTML5 / CSS3", "React.js", "JavaScript", "Tailwind", "UI/UX Design"]
-
+const hardSkills = [
+  "HTML5 / CSS3",
+  "JavaScript (ES6+)",
+  "React.js",
+  "Tailwind CSS",
+  "REST APIs",
+  "Git & GitHub",
+  "Responsive Design",
+  "GSAP",
+  "Deployment (Vercel)"
+]
   return (
     <section className="reveal px-6 bg-white dark:bg-black text-black dark:text-white min-h-[100vh] md:min-h-screen transition-colors duration-500">
       <div className="pr-6 md:pr-12 lg:pr-20 py-16 md:py-24">
@@ -17,7 +26,7 @@ export default function About() {
             <div>
               <h3 className="text-xs font-mono uppercase mb-4 tracking-widest opacity-50">Contact</h3>
               <p style={{ fontSize: "clamp(0.9rem,1.2vw,1.05rem)", lineHeight: "1.7" }}>
-                Mubashira.dev@gmail.com
+                Mubashira.suroor@gmail.com
               </p>
             </div>
             <div>
